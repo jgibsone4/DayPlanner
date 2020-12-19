@@ -15,7 +15,7 @@ textarea{
 }
 
 .jumbotron {
-  background-image: url("./assets/background2.jpg");
+  background-image: url("assets/background2.jpg");
   text-align: center;
   background-color: transparent;
   color: black;
