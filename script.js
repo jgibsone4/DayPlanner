@@ -1,13 +1,9 @@
 $(document).ready(function () {
-  //display current day
-  var day = moment().format("MMMM Do YYYY");
+  //display current day, updated moment script to include hour
+  var day = moment().format('MMMM Do YYYY, h:mm:ss a');
   console.log(day);
   $("#currentDay").append(day);
 
-  //add time to display
-  var timeHour = parseInt(moment().format("HH"));
-  console.log(timeHour);
-  $("#currentDay").append(timeHour); //not working
 
   //adding text var, corrected typo
   var $txt9 = $("#txt9");
@@ -20,7 +16,7 @@ $(document).ready(function () {
   var $txt4 = $("#txt4");
   var $txt5 = $("#txt5");
 
-  //colors
+  //colors                            //not working
   $("textarea").each(function () {
     var name = parseInt($(this).attr("name"));
     if (name < timeHour) {
