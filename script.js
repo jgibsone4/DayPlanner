@@ -1,9 +1,10 @@
 $(document).ready(function () {
-  //display current day, updated moment script to include hour
-  var day = moment().format('MMMM Do YYYY, h:mm:ss a');
+  //display current day
+  var day = moment().format("MMMM Do YYYY, h:mm:ss a");
   console.log(day);
   $("#currentDay").append(day);
-
+  var time = parseInt(moment().format("HH"));
+  
 
   //adding text var, corrected typo
   var $txt9 = $("#txt9");
@@ -16,25 +17,25 @@ $(document).ready(function () {
   var $txt4 = $("#txt4");
   var $txt5 = $("#txt5");
 
-  //colors                            //not working
+  //colors
+
   $("textarea").each(function () {
     var name = parseInt($(this).attr("name"));
-    if (name < timeHour) {
-      $(this).addClass(".present");
+    if (name < time) {
+      $(this).addClass("past");
     }
 
-    if (name > timeHour) {
-      $(this).addClass(".past");
+    if (name > time) {
+      $(this).addClass("future");
     }
 
-    if (name === timeHour) {
-      $(this).addClass(".future");
+    if (name === time) {
+      $(this).addClass("present");
     }
   });
 
-  //enter event when clicked & save when button clicked
+  //event saved to local
   $("button").on("click", function () {
-    //event saved to local
     localStorage.setItem("9AM", $txt9.val());
     localStorage.setItem("10AM", $txt10.val());
     localStorage.setItem("11AM", $txt11.val());

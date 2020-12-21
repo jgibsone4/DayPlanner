@@ -46,17 +46,17 @@ textarea{
 
 .past {
   background-color: #d3d3d3;
-  color: pink;  /* updated to pink */
+  color: white;
 }
 
 .present {
   background-color: #ff6961;
-  color: green; /*  updated to green */
+  color: white;
 }
 
 .future {
   background-color: #77dd77;
-  color: yellow; /*  updated to yellow */
+  color: white;
 }
 
 .saveBtn {
