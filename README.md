@@ -42,9 +42,9 @@ Amanda Wiehrs                                   |
 
 ## Contributing
 
-* [Submit bugs and feature requests](https://github.com/jgibsone4/Responsive-Design/issues), and help us verify as they are checked in
-* Review [source code changes](https://github.com/jgibsone4/Responsive-Design/pulls)
-* Review the [documentation](https://github.com/jgibsone4/Responsive-Design) and make pull requests for anything from typos to new content
+* [Submit bugs and feature requests](https://github.com/jgibsone4/DayPlanner/issues), and help us verify as they are checked in
+* Review [source code changes](https://github.com/jgibsone4/DayPlanner/pulls)
+* Review the [documentation](https://github.com/jgibsone4/DayPlanner) and make pull requests for anything from typos to new content
 
 
 ## Code of Conduct
